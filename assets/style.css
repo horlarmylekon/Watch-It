@@ -1,0 +1,199 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 400px;
+  line-height: 1.5em;
+  margin: 10px;
+  color: rgb(128, 128, 128);
+  background: #fff;
+}
+
+/* Header */
+.logo-brand {
+  width: 30px;
+  position: absolute;
+  top: 10px;
+}
+.header {
+  background: linear-gradient(to right bottom,rgba(230, 152, 6, 0.8),rgba(235, 163, 7, 0.664)), 
+   url(../photos/laundry-1.jpg);
+   background-repeat: no-repeat;
+   background-size: cover;
+  position: sticky;
+  height: 95vh;
+
+  clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+}
+
+.navbar a {
+  color: #000;
+}
+
+li a:hover {
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #000;
+  border-bottom: 1px solid #000;
+}
+
+/* text box */
+.text-box {
+  text-align: center;
+  position: absolute;
+  padding: 10px;
+  top: 30%;
+  left: 30%;
+}
+
+.primary-heading {
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.primary-heading-main {
+  display: block;
+  font-size: 1em;
+  letter-spacing: 12px;
+
+  animation-name: moveMain;
+  animation-duration: 5s;
+  animation-timing-function: ease-in-out;
+}
+
+.primary-heading-sub {
+  display: block;
+  font-size: 0.35em;
+  letter-spacing: 7px;
+
+  animation-name: moveSub;
+  animation-duration: 5s;
+  animation-timing-function: ease-in-out;
+}
+
+/* animation to primary heading */
+
+@keyframes moveMain {
+  0% {
+    transform: translateX(100px);
+  }
+
+  100% {
+    transform: translateX(-100px);
+  }
+}
+.btn:hover {
+  color: rgb(255, 165, 0);
+}
+
+@keyframes moveSub {
+  0% {
+    transform: translateX(-100%);
+  }
+
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+.btn-black {
+  background: #000000;
+  color: #fff;
+  margin-top: 20px;
+  border-radius: 20px;
+  padding: 10px;
+}
+
+/* About Section */
+.sections {
+  margin-bottom: 10px;
+}
+
+#about-section {
+  background: url(../photos/blog_1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 30px auto;
+  height: 700px;
+  color: #fff;
+}
+
+.section-head {
+  text-align: center;
+  margin-top: 10px;
+  padding: 10px;
+  background: #000000;
+  color: #fff;
+  border-radius: 20px;
+}
+
+.section-content {
+  margin-left: 10px;
+}
+
+.top {
+  padding: 45px;
+}
+
+.bottom {
+  display: flex;
+}
+
+.bottom #left {
+  width: 50%;
+  margin: 5px;
+}
+
+.bottom #right {
+  width: 50%;
+  margin: 5px;
+}
+
+/* how-we-work section */
+
+.how-we-work-items .item-1,
+.how-we-work-items .item-2,
+.how-we-work-items .item-3 {
+  margin: 30px;
+  padding: 10px;
+  border-left: 12px solid orange;
+}
+
+/* Our Team section */
+
+#our-team-section .teams {
+  margin: 40px;
+  padding: 40px;
+  background: orange;
+  border-top: 10px solid #000;
+  border-bottom: 10px solid #000;
+  color: #000;
+}
+
+.title > img {
+  width: 200px;
+  border-radius: 50%;
+  border: 3px solid #000;
+}
+
+/* Contact form section */
+
+.contact-form {
+  padding: 20px;
+}
+
+.form-control {
+  border: 1px solid orange;
+}
+/* footer */
+
+.footer {
+  background: rgb(255, 165, 0);
+  position: sticky;
+  height: 15vh;
+}
